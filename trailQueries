@@ -1,0 +1,3 @@
+var results1= db.twittercoll2.aggregate([{$sort: {user_id : 1}}], {allowDiskUse: true})
+
+var results1= db.follower_ids.aggregate([{$sort: {user_id : 1}}], {allowDiskUse: true})

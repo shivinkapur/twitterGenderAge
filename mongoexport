@@ -1,0 +1,17 @@
+mongoexport --db users --collection contacts --csv --fieldFile fields.txt --out /opt/backups/contacts.csv
+
+mongoexport --dbpath </Users/shivinkapur/Desktop/data/db> —db followers_jsonfiles1 —collection follower_ids —-
+
+./mongoexport --dbpath /Users/shivinkapur/Desktop/data/db -—db followers_jsonfiles1 —-collection follower_ids —-fields user_id,orig_name,name  --csv --out /Users/shivinkapur/Desktop/246Code/ProjectCode/tnames.csv  
+
+./mongoexport -d followers_jsonfiles1 —c follower_ids —f user_id,orig_name,name  --csv -o= “/Users/shivinkapur/Desktop/246Code/ProjectCode/tnames.csv”  
+
+./mongoexport -d testdb -c testcoll -f user_id,name,orig_name --csv -o "/Users/shivinkapur/Desktop/246Code/ProjectCode/tnames.csv"
+
+./mongoexport -d 246ProjData1 -c twittercoll2 -f user_id,name,orig_name --csv -o "/Users/shivinkapur/Desktop/246Code/ProjectCode/tnames.csv"
+
+db.testcoll.aggregate([{ $sort : { user_id : 1} }],{allowDiskUse: true}).pretty()
+
+db.twittercoll2.aggregate([{ $sort : { user_id : 1} }, { $out: "twittercoll2" }],{allowDiskUse: true})
+
+./mongoexport -d 246ProjData1 -c twittercoll2 -f user_id,name,orig_name --csv -o "/Users/shivinkapur/Desktop/246Code/ProjectCode/tnames.csv"

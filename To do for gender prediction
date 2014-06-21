@@ -1,0 +1,8 @@
+To do for gender prediction
+1. Count total births for a name. (per year as well as over all the years)
+2. Count no of male and female births for a name.
+3. Make a prediction on whether he is male or female.
+4. Plot all birth frequencies per year for each name.
+5. What is the probablity that given a name, the person is of age (say) 25?
+	For this, you can see the mean and the variance and then figure out how to decide the age.
+6. The output will be a csv file.
